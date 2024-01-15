@@ -16,6 +16,8 @@ pipeline {
             steps {
                 sh 'echo passed!!'
                 git branch: 'main', url: 'https://github.com/kiranbakale/ultimate-cicd.git'
+                sh 'pwd'
+                sh 'ls'
             }
         }
         stage('Build and Test') {
