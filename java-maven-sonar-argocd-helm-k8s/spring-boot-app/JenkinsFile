@@ -59,7 +59,6 @@ pipeline {
                     sh """
                         git config user.email "kiranbakale9@gmail.com"
                         git config user.name "kiranbakale"
-                        BUILD_NUMBER=${BUILD_NUMBER}
                         OLD_BUILD_NUMBER=$((${BUILD_NUMBER}-1))
                         sed -i "s/${OLD_BUILD_NUMBER}/${BUILD_NUMBER}/g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                         git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
