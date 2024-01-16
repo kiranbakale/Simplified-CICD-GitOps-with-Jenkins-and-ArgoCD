@@ -14,7 +14,7 @@ pipeline {
         // }
         stage('Checkout') {
             steps {
-                sh 'echo passed!!'
+                sh 'echo passed!!!'
                 git branch: 'main', url: 'https://github.com/kiranbakale/ultimate-cicd.git'
                 sh 'pwd'
                 sh 'ls'
