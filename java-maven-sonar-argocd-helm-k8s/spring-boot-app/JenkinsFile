@@ -7,17 +7,10 @@ pipeline {
     }
   
     stages {
-        // stage('Clean Workspace') {
-        //     steps {
-        //         deleteDir() // Clean up workspace before checking out the code
-        //     }
-        // }
         stage('Checkout') {
             steps {
                 sh 'pwd'
                 sh 'echo passed!!!'
-                sh 'rm -r ultimate-cicd-pipeline'
-                sh 'rm -r ultimate-cicd-pipeline@tmp'
                 git branch: 'main', url: 'https://github.com/kiranbakale/ultimate-cicd.git'
                 sh 'pwd'
                 sh 'ls'
