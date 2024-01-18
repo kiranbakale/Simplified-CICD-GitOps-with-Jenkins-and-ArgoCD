@@ -12,7 +12,6 @@
 ![non](https://github.com/kiranbakale/Simplified-CICD-GitOps-with-Jenkins-and-ArgoCD/assets/46279617/0bfb78ce-28f4-49c6-b6f3-be300bddc9dc)
 
 
-# Project Name: Continuous Deployment with GitOps
 
 ## Overview
 
@@ -34,6 +33,5 @@ This repository demonstrates a comprehensive Continuous Integration and Continuo
 7. **ArgoCD Image Updater**: ArgoCD's image updater component updates the image name in the repository.
 8. **ArgoCD Deployment**: ArgoCD, the continuous delivery tool, orchestrates changes in the Kubernetes deployment based on the new image.
 
-If you are interested in deploying this setup, follow the detailed step-by-step guide in this
-[![Medium article]([https://img.shields.io/badge/Maven-C71A36.svg?style=for-the-badge&logo=apache-maven&logoColor=white](https://medium.com/@kiranbakale9/simplified-ci-cd-gitops-with-jenkins-and-argocd-b76de1c80362))]
+If you are interested in deploying this setup, follow the detailed step-by-step guide in this <a href="https://medium.com/@kiranbakale9/simplified-ci-cd-gitops-with-jenkins-and-argocd-b76de1c80362">Medium Article</a>
 This repository serves as a blueprint for implementing a GitOps-centric CI/CD pipeline, promoting automation and efficiency in the software delivery process. Feel free to customize and extend it based on your specific project needs.
