@@ -51,14 +51,14 @@ pipeline {
         }
         stage('Update Deployment File') {
             environment {
-                GIT_REPO_NAME = "ultimate-cicd"
-                GIT_USER_NAME = "kiranbakale"
+                GIT_REPO_NAME = "ultimate-cicd" ## replace with your github repository name
+                GIT_USER_NAME = "kiranbakale"   ## replace with your github account username
             }
             steps {
                 withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        git config user.email "kiranbakale9@gmail.com"
-                        git config user.name "kiranbakale"
+                        git config user.email "kiranbakale9@gmail.com" ## replace with your github useremail
+                        git config user.name "kiranbakale"            ## replace with your github usernamename
                         OLD_BUILD_NUMBER=$((${BUILD_NUMBER}-1))
                         sed -i "s/${OLD_BUILD_NUMBER}/${BUILD_NUMBER}/g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                         git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
