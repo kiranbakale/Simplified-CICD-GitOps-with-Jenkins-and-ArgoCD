@@ -22,6 +22,10 @@ This repository demonstrates a comprehensive Continuous Integration and Continuo
 - **/spring-boot-app**: Contains the source code of the application.
 - **/spring-boot-app-manifests**: Includes Kubernetes deployment manifest files.
 
+## ⚠️ Note on Repository Structure
+While GitOps best practices often recommend separate repositories for code and manifests, this project takes a deliberate approach by consolidating both in a single repository. The intention is to simplify the learning experience, especially for beginners, and highlight the integral role of Argo CD in the continuous deployment process.
+
+
 ## CI/CD Flow
 
 1. **Developer's Commit**: Developers commit their code to the GitHub repository.
